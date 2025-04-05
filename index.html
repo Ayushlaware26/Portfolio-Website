@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body>
+    <div class="container">
+      <video class="back-vid" loop autoplay muted plays-inline src="videos/galaxy.mp4" type="video/mp4"></video>  
+        
+      <header>
+        <div class="left">
+            <h1><span style="color: #72a1de68;">Ayush</span>Laware</h1>
+        </div>
+
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+
+        <div class="box-icons">
+           <a href="https://github.com/Ayushlaware26"><i class='bx bxl-github' ></i></a> 
+           <a href="www.linkedin.com/in/ayushlaware"><i class='bx bxl-linkedin-square'></i></a>
+           <a href="https://www.instagram.com/ayushlaware/"><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+      </header>
+
+      <div class="blackhole-box">
+        <video src="videos/blackhole.mp4 " type="video/mp4" autoplay muted loop plays-inline></video>
+      </div>
+
+      <section class="hero">
+        <div class="hero-info">
+            <div class="hero-info-title">
+                SOTWARE AND DATA SCIENCE
+            </div>
+            <h1>
+                Working on <span class="gradient">Software</span> & <span class="gradient">Data Scinece</span> Projects
+            </h1>
+            <p>Hello, I am Ayush, a third-year student at IIT Kharagpur and a passionate technology enthusiast. I have a strong interest in software development and data science, with experience in the MERN stack, TypeScript, Tensorflow, Python, Deployment</p>
+            <button onclick="scrollToSection('connect')"><i class='bx bx-send'></i><span>  Contact Me</span></button>
+        </div>
+
+        <div class="hero-vid-box" >
+            <video src="videos/hero-video.mp4" type="video/mp4" autoplay muted loop plays-inline></video>
+        </div>
+
+        <div class="scroll-down" onclick="scrollToSection('projects')">
+            <div class="scroll-arrow"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+          <button class="project-nav-btn prev-btn" id="prevProject">
+            <i class='bx bx-chevron-left'></i>
+          </button>
+          <button class="project-nav-btn next-btn" id="nextProject">
+            <i class='bx bx-chevron-right'></i>
+          </button>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/whietboard1.png" alt="Whiteboard Project">
+            </div>
+            <div class="project-content">
+              <h3>Collaborative Canvas</h3>
+              <p>I built a real-time whiteboard application that enables seamless multi-user collaboration using React, Node.js, and Socket.IO. The backend features secure JWT authentication and MongoDB for persistent storage, with optimized queries and indexing to improve performance. RESTful APIs power smooth CRUD operations, and real-time communication delivers sub-second latency during collaboration.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Socket.io</span>
+                <span>Canvas API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Ayushlaware26/Collaborative-Canvas" class="project-link"><i class='bx bxl-github'></i> View Code</a>
+                <a href="https://github.com/Ayushlaware26/Collaborative-Canvas" class="project-link"><i class='bx bx-link-external'></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/rubikcube.png" alt="Rubik's Cube Solver">
+            </div>
+            <div class="project-content">
+              <h3>Rubik's Cube Solver</h3>
+              <p>I developed a virtual Rubik's Cube (3x3) solver in C++, implementing multiple solving strategies, including BFS, DFS, and IDDFS, achieving a solving time of under 3 seconds for a cube jumbled 8 times. To further optimize performance, I implemented Korf's IDA Algorithm*, reducing the solving time to under 10 seconds for a cube jumbled 13 times. This project showcases my algorithmic problem-solving skills.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Three.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Ayushlaware26/Rubiks-Cube" class="project-link"><i class='bx bxl-github'></i> View Code</a>
+                <a href="https://github.com/Ayushlaware26/Rubiks-Cube" class="project-link"><i class='bx bx-link-external'></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/chromeExt.png" alt="Chrome Extension">
+            </div>
+            <div class="project-content">
+              <h3>AI Doubt Solver</h3>
+              <p>Built a Chrome extension that leverages LLM models to provide real-time, context-aware doubt resolution while browsing. Developed with React, JavaScript, and Chrome Extension APIs, it features a seamless SPA interface and optimized AI prompts for accurate, intelligent assistance. This project highlights my skills in frontend development, API integration, and AI-driven solutions.</p>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>Chrome API</span>
+                <span>HTML/CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Ayushlaware26/AI-Chrome-Extension" class="project-link"><i class='bx bxl-github'></i> View Code</a>
+                <a href="https://github.com/Ayushlaware26/AI-Chrome-Extension" class="project-link"><i class='bx bx-link-external'></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+          <div class="skills-left">
+            <h2>AI & Machine Learning</h2>
+            <div class="skill-content">
+              <p>Specialized in developing intelligent systems and machine learning solutions. Experienced with:</p>
+              <ul class="skill-list">
+                <li>Computer Vision & Image Processing</li>
+                <li>Natural Language Processing</li>
+                <li>Deep Learning & Neural Networks</li>
+                <li>Data Analysis & Visualization</li>
+                <li>AI Model Deployment</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skills-center">
+            <img src="images/digital brain.png" alt="Digital Brain" class="brain-image">
+          </div>
+
+          <div class="skills-right">
+            <h2>Software Development</h2>
+            <div class="skill-content">
+              <p>Expert in full-stack development and modern software architecture. Proficient in:</p>
+              <ul class="skill-list">
+                <li>Web Development (React, Node.js)</li>
+                <li>Database Design & Management</li>
+                <li>API Development & Integration</li>
+                <li>Cloud Services & Deployment</li>
+                <li>Software Testing & Quality Assurance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-images">
+          <div class="image-grid">
+            <img src="images/1.png" alt="Skill 1" class="skill-img">
+            <img src="images/2.png" alt="Skill 2" class="skill-img">
+            <img src="images/3.png" alt="Skill 3" class="skill-img">
+            <img src="images/4.png" alt="Skill 4" class="skill-img">
+            <img src="images/5.png" alt="Skill 5" class="skill-img">
+            <img src="images/6.png" alt="Skill 6" class="skill-img">
+            <img src="images/7.png" alt="Skill 7" class="skill-img">
+            <img src="images/8.png" alt="Skill 8" class="skill-img">
+            <img src="images/9.png" alt="Skill 9" class="skill-img">
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="connect-section">
+        <div class="connect-container">
+          <h2>Let's Connect</h2>
+          <p class="connect-text">I'm open to exciting opportunities and would love to work on innovative projects. Let's create something amazing together!</p>
+          
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class='bx bx-envelope'></i>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <a href="mailto:ayushlaware@gmail.com">ayushlaware@example.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class='bx bx-phone'></i>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <a href="tel:+1234567890">+91 7620089340</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class='bx bxl-linkedin'></i>
+              <div class="contact-details">
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/ayushlaware" target="_blank">linkedin.com/in/ayushlaware</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="connect-buttons">
+            <a href="./Resume_.pdf" class="connect-btn secondary" id="resume-btn">
+              <i class='bx bx-file'></i>
+              View CV
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
